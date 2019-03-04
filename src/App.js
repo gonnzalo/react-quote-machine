@@ -6,6 +6,19 @@ import Btns from "./Btns";
 
 import "./App.css";
 
+const colors = [
+  "#fd79a8",
+  "#FFA726",
+  "#00b894",
+  "#5C6BC0",
+  "#ffeaa7",
+  "#636e72",
+  "#ED4C67",
+  "#4CAF50",
+  "#95E6C1",
+  "#D980FA"
+];
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -35,14 +48,21 @@ class App extends Component {
   render() {
     const { quote } = this.state;
     return (
-      <div className="App">
-        <Quote body={quote.body || ""} />
-        <Author author={quote.author || ""} />
-        <Btns
-          handleClick={this.handleClick}
-          body={quote.body || ""}
-          author={quote.author || ""}
-        />
+      <div
+        className="App"
+        style={{
+          backgroundColor: colors[Math.floor(Math.random() * colors.length)]
+        }}
+      >
+        <div className="container">
+          <Quote body={quote.body || ""} />
+          <Author author={quote.author || ""} />
+          <Btns
+            handleClick={this.handleClick}
+            body={quote.body || ""}
+            author={quote.author || ""}
+          />
+        </div>
       </div>
     );
   }

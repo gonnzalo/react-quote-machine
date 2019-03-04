@@ -1,0 +1,45 @@
+.Btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newQuote {
+  border: none;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 35px;
+  color: #292626;
+  background-color: #dfe6e9;
+  border: 3px solid #292626;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.newQuote:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
+  opacity: 0.85;
+  transform: translateY(-2px);
+  background-color: #292626;
+  color: #dfe6e9;
+}
+
+.newQuote:active {
+  transform: translateY(0px);
+}
+
+.newQuote:focus {
+  outline: 0;
+}
+
+.twitter {
+  transition-duration: 0.3s;
+}
+
+.twitter:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}

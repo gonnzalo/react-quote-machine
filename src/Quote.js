@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./Quote.css";
+
 function Quote(props) {
   const { body } = props;
   return (
-    <div>
-      <h1>{body}</h1>
+    <div className="Quote">
+      <h1>&quot; {body} &quot;</h1>
     </div>
   );
 }
