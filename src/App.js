@@ -36,9 +36,13 @@ class App extends Component {
     const { quote } = this.state;
     return (
       <div className="App">
-        <Quote body={quote.body} />
-        <Author author={quote.author} />
-        <Btns clicks={this.handleClick} />
+        <Quote body={quote.body || ""} />
+        <Author author={quote.author || ""} />
+        <Btns
+          handleClick={this.handleClick}
+          body={quote.body || ""}
+          author={quote.author || ""}
+        />
       </div>
     );
   }

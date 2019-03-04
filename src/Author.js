@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Author(props) {
   const { author } = props;
@@ -8,5 +9,9 @@ function Author(props) {
     </div>
   );
 }
+
+Author.propTypes = {
+  author: PropTypes.string.isRequired
+};
 
 export default Author;

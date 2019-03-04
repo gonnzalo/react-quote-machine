@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Quote(props) {
   const { body } = props;
@@ -8,5 +9,9 @@ function Quote(props) {
     </div>
   );
 }
+
+Quote.propTypes = {
+  body: PropTypes.string.isRequired
+};
 
 export default Quote;
