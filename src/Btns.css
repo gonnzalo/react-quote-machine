@@ -12,9 +12,9 @@
   font-size: 1.1rem;
   text-transform: uppercase;
   border-radius: 35px;
-  color: #292626;
-  background-color: #dfe6e9;
-  border: 3px solid #292626;
+  background-color: #323538;
+  color: #dfe6e9;
+  border: 3px solid #323538;
   cursor: pointer;
   transition-duration: 0.3s;
 }
